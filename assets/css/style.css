@@ -1,12 +1,65 @@
+:root {
+    --white: white;
+}
 header {
+    position:relative;
     width: 100%;
-    height: 25vw;
+    z-index: 2;
+    text-align: center;
 }
     header img {
         display: block;
-        height: 100%;
         margin: 0 auto;
+        width: 250px;
     }
+
+#hamburger {
+    display: none;
+    width: 50px;
+}
+#hamburger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px auto;
+}
+#navBar {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+#navBar li {
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+    flex: 0 1 150px;
+    list-style: none;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+#navBar li, #navBar li a {
+    text-decoration: underline;
+    color: black;
+}
+
+#navBar li:hover{
+    color:darkslategray;
+    text-shadow: 2px 2px 2px rgb(255, 88, 255);
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    text-align: center;
+    margin: 150px auto;
+    align-items: center;
+}
 
 .clubContainer {
     display: flex;
@@ -33,3 +86,56 @@ header {
         text-align: center;
     }
     
+
+    @media screen and (max-width:690px) {
+        #hamburger {
+            height: 100%;
+            display: inline;
+            margin-left: 10px;
+
+        }
+        header {
+            width: 100%;
+            display:flex;
+            position: fixed;
+            top: 0;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--white);
+            border-bottom: 1px solid darkslategrey;
+        }
+        header img {
+            position: relative;
+            left: -25px;
+        }
+        #navBar {
+            visibility: hidden;
+            opacity: 0;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            width: 150px;
+            background-color: var(--white);
+            border: 1px black solid;
+            border-radius: 2px;
+            box-shadow: 3px 3px 3px darkslategray;
+            line-height: 2rem;
+            text-align: center;
+            position: absolute;
+            padding: 0;
+            z-index: 2;
+            transition: all .3s ease-in-out;
+        }
+        #navBar li {
+            flex: 0 0 25px;
+        }
+    }
+    @media screen and (min-width: 691px) {
+        #navBar {
+            display: flex;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
