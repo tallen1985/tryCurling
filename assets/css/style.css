@@ -1,6 +1,21 @@
 :root {
     --white: white;
 }
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Bebas Neue', cursive;
+}
+
+li {
+    font-size: 1.5rem;
+}
 header {
     position:relative;
     width: 100%;
@@ -37,7 +52,7 @@ header {
     padding: 10px 0;
     position: relative;
     display: inline-block;
-    flex: 0 1 150px;
+    flex: 1 1 150px;
     list-style: none;
     font-weight: bold;
     transition: all .2s ease-in-out;
@@ -50,17 +65,23 @@ header {
 
 #navBar li:hover{
     color:darkslategray;
-    text-shadow: 2px 2px 2px rgb(255, 88, 255);
+    text-shadow: 2px 2px 2px rgba(5, 41, 245, 0.5);
 }
 main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: var(--white);
     text-align: center;
-    margin: 150px auto;
     align-items: center;
 }
-
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1 solid darkslategray;
+    border-radius: 3px;
+}
 .clubContainer {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +93,7 @@ main {
     align-content: center;
 }
     .clubContainer .clubLogo {
-        flex: 1 0 250px;
+        flex: 1 0 100px;
         text-align: center;
         align-self: center;
     }
@@ -131,6 +152,13 @@ main {
         #navBar li {
             flex: 0 0 25px;
         }
+        main {
+           margin: 150px auto; 
+        }
+        .clubContainer .clubInfo {
+            display: none;
+        }
+        
     }
     @media screen and (min-width: 691px) {
         #navBar {
