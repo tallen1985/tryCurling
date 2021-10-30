@@ -11,6 +11,7 @@ h3,
 h4,
 h5{
     font-family: 'Bebas Neue', cursive;
+    margin-bottom: 0;
 }
 
 li {
@@ -25,7 +26,7 @@ header {
     header img {
         display: block;
         margin: 0 auto;
-        width: 250px;
+        width: 50%;
     }
 
 #hamburger {
@@ -58,7 +59,8 @@ header {
     transition: all .2s ease-in-out;
 }
 
-#navBar li, #navBar li a {
+#navBar li, #navBar li a,
+a {
     text-decoration: underline;
     color: black;
 }
@@ -75,13 +77,18 @@ main {
     text-align: center;
     align-items: center;
 }
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: 1 solid darkslategray;
-    border-radius: 3px;
-}
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 3px;
+        justify-content: center;
+        margin: 5px;
+    }
+    section p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
 .clubContainer {
     display: flex;
     flex-wrap: wrap;
@@ -97,17 +104,24 @@ section {
         text-align: center;
         align-self: center;
     }
-    .clubContainer .clubLogo img {
-        width: 90%;
-    }
     .clubContainer .clubInfo {
         flex: 1 0 250px;
     }
     .clubContainer .clubInfo h2 {
         text-align: center;
     }
-    
-
+.clubLogo {
+    flex: 1 0 100px;
+    text-align: center;
+    align-self: center;
+}
+.clubLogo img {
+        width: 90%;
+    }
+#about {
+    display: flex;
+    flex-direction: row;
+}
     @media screen and (max-width:690px) {
         #hamburger {
             height: 100%;
@@ -123,7 +137,6 @@ section {
             align-items: center;
             justify-content: space-between;
             background-color: var(--white);
-            border-bottom: 1px solid darkslategrey;
         }
         header img {
             position: relative;
@@ -153,12 +166,29 @@ section {
             flex: 0 0 25px;
         }
         main {
-           margin: 150px auto; 
+           margin: 125px auto 0 auto; 
+        }
+        .clubContainer {
+            border: 0;
         }
         .clubContainer .clubInfo {
             display: none;
         }
-        
+        .contentSection {
+            border: 1px solid darkslategray;
+            border-radius: 3px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        #about {
+            flex-direction: column;
+        }
+        #aboutInfo {
+            display: block;
+        }
     }
     @media screen and (min-width: 691px) {
         #navBar {
