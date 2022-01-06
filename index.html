@@ -1,113 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
     <title>Try Curling</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
-        <div class="container-fluid">
-            
-            <a class="navbar-brand " href="#">
-                <img src="./assets/img/curling-stone.png" alt="" width="30" height="24">
-                Try Curling.org
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Curling</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#findAClub">Find a Club</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/img/curling-stone.png"
+            alt=""
+            width="30"
+            height="24"
+          />
+          Try Curling.org
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Curling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#findAClub">Find a Club</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <main class="bg-dark text-light text-center">
-        <div class="container col-10">
-            <img src="assets/img/logo.jpg" class="my-3 border border-white" id="banner">
+      <div class="container col-10">
+        <img
+          src="assets/img/pool.png"
+          class="my-3 border border-white"
+          id="banner"
+        />
+      </div>
+      <div class="container-fluid">
+        <h2>Featured Clubs</h2>
+        <div
+          class="container-sm w-75 d-flex border rounded bg-white justify-content-evenly"
+        >
+          <section class="w-50">
+            <a data-bs-toggle="modal" href="#pinelandsModal">
+              <img
+                src="./assets/img/Jersey-Pinelands-Curling-Club-Logo-Full-Color.jpg"
+                alt="Jersey Pinelands Curling Club"
+                class="w-75 p-3 mx-auto d-block"
+              />
+            </a>
+          </section>
+          <section class="w-50">
+            <a data-bs-toggle="modal" href="#diamondStateModal">
+              <img
+                src="./assets/img/DSCC Logo.png"
+                alt="Diamond State Curling Club"
+                class="w-75 p-3 mx-auto d-block"
+              />
+            </a>
+          </section>
         </div>
-        <div class="container-fluid">
-            
-            <h2>Featured Clubs</h2>
-            <div class="container-sm w-75 d-flex border rounded bg-white justify-content-evenly">
-                <section class="w-50">
-                <a data-bs-toggle="modal" href="#pinelandsModal">
-                    <img src="./assets/img/Jersey-Pinelands-Curling-Club-Logo-Full-Color.jpg" alt="Jersey Pinelands Curling Club" class="w-75 p-3 mx-auto d-block">
-                </a>
-                </section>
-                <section class="w-50">
-                    <a data-bs-toggle="modal" href="#diamondStateModal">
-                    <img src="./assets/img/DSCC Logo.png" alt="Diamond State Curling Club"  class="w-75 p-3 mx-auto d-block">
-                </a>
-                </section>
-            </div>
+      </div>
+      <section class="container-md my-3" id="about">
+        <h2>About Curling</h2>
+        <div class="container-fluid bg-white text-dark border rounded">
+          <img
+            src="./assets/img/field.jpg"
+            class="row w-50 d-block mx-auto"
+            alt="Curling Pitch"
+          />
+          <p class="w-100 d-block">
+            Curling is a sport in which players slide stones on a sheet of ice
+            toward a target area which is segmented into four concentric
+            circles. It is related to bowls, boules and shuffleboard. Two teams,
+            each with four players, take turns sliding heavy, polished granite
+            rocks, also called stones, across the ice curling sheet toward the
+            house, a circular target marked on the ice.[2] Each team has eight
+            stones, with each player throwing two. The purpose is to accumulate
+            the highest score for a game; points are scored for the stones
+            resting closest to the centre of the house at the conclusion of each
+            end, which is completed when both teams have thrown all of their
+            stones. A game usually consists of eight or ten ends.
+          </p>
         </div>
-        <section class="container-md my-3" id="about">
-            <h2>About Curling</h2>
-            <div class="container-fluid bg-white text-dark border rounded">
-                <img src="./assets/img/field.jpg" class="row w-50 d-block mx-auto" alt="Curling Pitch">
-                <p class="w-100 d-block">Curling is a sport in which players slide stones on a sheet of ice toward a target area which is segmented into four concentric circles. It is related to bowls, boules and shuffleboard. Two teams, each with four players, take turns sliding heavy, polished granite rocks, also called stones, across the ice curling sheet toward the house, a circular target marked on the ice.[2] Each team has eight stones, with each player throwing two. The purpose is to accumulate the highest score for a game; points are scored for the stones resting closest to the centre of the house at the conclusion of each end, which is completed when both teams have thrown all of their stones. A game usually consists of eight or ten ends.
-                </p>
-            </div>
-        </section>
-        <section>
-            <h2>Rules</h2>
-        </section>
-        <section id="findAClub">
-            <a href="https://www.usacurling.org/find-a-club-near-me" target="_blank"><h2>Find a Club</h2></a>
-        </section>
+      </section>
+      <section>
+        <h2>Rules</h2>
+      </section>
+      <section id="findAClub">
+        <a href="https://www.usacurling.org/find-a-club-near-me" target="_blank"
+          ><h2>Find a Club</h2></a
+        >
+      </section>
     </main>
     <div class="modal" tabindex="-1" id="pinelandsModal">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Pinelands Curling Club</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.6398734905724!2d-75.06385088461758!3d39.97180367941929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c9f61a59a7e1%3A0xc3cd9e955556b3cf!2s6725%20River%20Rd%2C%20Pennsauken%20Township%2C%20NJ%2008110!5e0!3m2!1sen!2sus!4v1635859603735!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="modal-footer">
-              <a href="https://jerseycurling.org" class="btn btn-secondary">Visit Club Site</a>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Pinelands Curling Club</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.6398734905724!2d-75.06385088461758!3d39.97180367941929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c9f61a59a7e1%3A0xc3cd9e955556b3cf!2s6725%20River%20Rd%2C%20Pennsauken%20Township%2C%20NJ%2008110!5e0!3m2!1sen!2sus!4v1635859603735!5m2!1sen!2sus"
+              width="100%"
+              height="auto"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <a href="https://jerseycurling.org" class="btn btn-secondary"
+              >Visit Club Site</a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <div class="modal" tabindex="-1" id="diamondStateModal">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Diamond State Curling Club</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24564.52631850646!2d-75.72863!3d39.681981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7aa1109ef37f3%3A0x174123d02a197be8!2s101%20John%20Campbell%20Rd%2C%20Newark%2C%20DE%2019711!5e0!3m2!1sen!2sus!4v1635859990268!5m2!1sen!2sus" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="modal-footer">
-              <a href="https://diamondstatecurling.org" class="btn btn-secondary">Visit Club Site</a>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              
-            </div>
+    </div>
+    <div class="modal" tabindex="-1" id="diamondStateModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Diamond State Curling Club</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24564.52631850646!2d-75.72863!3d39.681981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7aa1109ef37f3%3A0x174123d02a197be8!2s101%20John%20Campbell%20Rd%2C%20Newark%2C%20DE%2019711!5e0!3m2!1sen!2sus!4v1635859990268!5m2!1sen!2sus"
+              width="100%"
+              height="auto"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <a href="https://diamondstatecurling.org" class="btn btn-secondary"
+              >Visit Club Site</a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
